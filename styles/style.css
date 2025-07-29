@@ -21,7 +21,7 @@
   list-style: circle;
 }
 
-.header__links-list-item_no-bullit {
+.header__links-list-item:first-of-type {
   list-style: none;
 }
 
@@ -78,7 +78,7 @@
   font-size: 100px;
   display: block;
   letter-spacing: 0.3em;
-  height: 115px;
+  min-height: 115px;
 }
 
 .aligned-text_left {
@@ -106,18 +106,17 @@
   margin-top: 106px;
 }
 
-.cover__description-text {
-  display: flex;
-  justify-content: space-between;
+.cover__description-text {  
   line-height: 28px;
   font-size: 22px;
   font-weight: 400;
   min-width: 637px;
   margin-right: 107px;
+  word-spacing: 18px;
 }
 
 button {
-  height: 51px;
+  min-height: 51px;
   background-color: transparent;
 }
 
@@ -131,7 +130,7 @@ button {
 
 .lots {
   min-height: 723px;
-  width: 1052px;
+  max-width: 1052px;
   margin: 180px 24px 120px;
 }
 
@@ -145,7 +144,7 @@ button {
 }
 
 .lots__card-list-item {
-  width: 334px;
+  max-width: 334px;
   min-height: 596px;
 }
 
